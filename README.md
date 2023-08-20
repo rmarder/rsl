@@ -1,5 +1,11 @@
 # RSL: Robert's Scripting Language
 
+RSL is a general purpose C-style scripting language, useful for everything from system scripting to CGI web applications.
+
+The syntax is inspired by languages such as Javascript, PHP, and Go.
+
+The core of the language is based on our fork of the <a href="https://github.com/rmarder/ape">Ape programming language</a>. The required files from Ape are included in this repository.
+
 # Documentation
 
 <p><b>RSL IS UNDER ACTIVE DEVELOPMENT SO EVERYTHING HERE CAN BE WRONG OR OUT OF DATE.<br/>
@@ -14,6 +20,8 @@ IF IN DOUBT, CHECK THE SOURCE CODE.</b></p>
 
 <a id="syntax"></a>
 ### 1. Syntax
+
+RSL is a new-line and semi-colon based language. All statements must end with either a new line, a semicolon, or both if you prefer.
 
 ### Basic types
 ```bool```, ```string```, ```number``` (double precision float), ```array```, ```map```, ```function```, ```error```
@@ -42,6 +50,7 @@ var variable = 3
 variable = 7 // ok
 variable++ // now 8
 variable-- // 7 again
+variable = variable * 2; variable--; // now 13
 ++variable // not supported
 --variable // not supported
 ```
