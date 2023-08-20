@@ -6,6 +6,16 @@ The syntax is inspired by languages such as Javascript, PHP, and Go.
 
 The core of the language is based on our fork of the <a href="https://github.com/rmarder/ape">Ape programming language</a>. The required files from Ape are included in this repository.
 
+# Building RSL
+```
+git clone https://github.com/rmarder/rsl
+make
+```
+### Dependencies
+
+1. A C compiler that confirms to ISO/IEC 9899:2011, aka C11.
+2. A system that conforms to the POSIX.1-2008 base specification. Any modern Linux or Unix should work.
+
 # Documentation
 
 <p><b>RSL IS UNDER ACTIVE DEVELOPMENT SO EVERYTHING HERE CAN BE WRONG OR OUT OF DATE.<br/>
