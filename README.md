@@ -37,8 +37,13 @@ Assignment:
 ```javascript
 const constant = 2
 constant = 1 // fail
+
 var variable = 3
 variable = 7 // ok
+variable++ // now 8
+variable-- // 7 again
+++variable // not supported
+--variable // not supported
 ```
 
 ## Strings
