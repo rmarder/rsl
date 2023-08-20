@@ -31,7 +31,9 @@ IF IN DOUBT, CHECK THE SOURCE CODE.</b></p>
 <a id="syntax"></a>
 ### 1. Syntax
 
-RSL is a new-line and semi-colon based language. All statements must end with either a new line, a semicolon, or both if you prefer.
+RSL is a new line and semicolon based language. All statements must end with either a new line, a semicolon, or both if you prefer.
+
+Aside from new line, no other whitespace is significant in any way.
 
 ### Basic types
 ```bool```, ```string```, ```number``` (double precision float), ```array```, ```map```, ```function```, ```error```
