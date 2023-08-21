@@ -195,6 +195,15 @@ fn vec2(x, y) {
 <a id="builtins"></a>
 ### 2. Standard Library of Functions
 
+`ereg(string regex, string search)` -> `bool`
+Test search against POSIX extended regular expression regex.
+```javascript
+var regex = "^[A-Za-z0-9\.|-|_]+[@][A-Za-z0-9\.|-|_]+[.]{1}[a-z]{2,6}$"
+println(ereg(regex, "me@example.com")) // true
+println(ereg(regex, "@example.com")) // false
+println(ereg(regex, "me@example.toolong")) // false
+```
+
 `len(string | array | map)` -> `number`
 Returns the length of the string, array, or map.
 
