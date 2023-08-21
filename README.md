@@ -255,7 +255,7 @@ Remove tokens from the start and end of haystack
 
 ```javascript
 var str = ""
-str = trim("fluffHelloWorldfluff","fluff") // str = HelloWorld
+str = trim("fluffHelloWorldfluff","fluff") // str = "HelloWorld", but this is improper usage - should use replace() instead.
 str = trim("test test","set")) // str = " "
 str = ltrim("test test","set")) // str = " test"
 str = rtrim("test test","set")) // str = "test "
