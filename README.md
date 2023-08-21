@@ -234,13 +234,31 @@ str = replace("World", "Sunshine", str) // Hello Sunshine
 Test if needle occurs anywhere in haystack.
 
 ```javascript
-var str = "Hello World"
+const str = "Hello World"
 if(contains(str, "e")) {
     // we reach here
 }
-if(!contains(str, "z")) {
+if(contains(str, "z")) {
     // we do not reach here
 }
+```
+<br/>
+
+`ltrim(string haystack, string tokens)` -> `bool`
+Remove tokens from the start of haystack
+
+`rtrim(string haystack, string tokens)` -> `bool`
+Remove tokens from the end of haystack
+
+`trim(string haystack, string tokens)` -> `bool`
+Remove tokens from the start and end of haystack
+
+```javascript
+var str = ""
+str = trim("fluffHelloWorldfluff","fluff") // str = HelloWorld
+str = trim("test test","set")) // str = " "
+str = ltrim("test test","set")) // str = " test"
+str = rtrim("test test","set")) // str = "test "
 ```
 <br/>
 
