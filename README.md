@@ -4,8 +4,6 @@ RSL is a general purpose C-style scripting language, useful for everything from 
 
 The syntax is inspired by languages such as Javascript, PHP, and Go.
 
-The core of the language is based on our fork of the <a href="https://github.com/rmarder/ape">Ape programming language</a>. The required files from Ape are included in this repository.
-
 # Building RSL
 ```
 git clone https://github.com/rmarder/rsl
