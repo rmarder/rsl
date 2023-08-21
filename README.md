@@ -278,6 +278,16 @@ str = implode(arr, " ") // str = "Hello Lovely World"
 ```
 <br/>
 
+`escapeshellarg(string)` -> `string`
+adds single quotes around a string and quotes/escapes any existing single quotes.
+
+```javascript
+const arg = "'te'st'"
+println(escapeshellarg(arg)) // ''\''te'\''st'\'''
+println(shell_exec(`echo ${escapeshellarg(arg)}`)) // 'te'st'
+```
+<br/>
+
 `println(object, ...)` -> `null`
 ```javascript
   var aMap = { "a": 1, "b": 2 }
