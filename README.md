@@ -503,6 +503,11 @@ Points to the standard output file descriptor.
 `STDERR` -> `number`
 Points to the standard error file descriptor.
 
+#### Limits
+
+`MAX_NUM` -> `number`
+Maximum number that is supported by platform. Will be the same as DBL_MAX from C.
+
 #### Environment
 
 `HTTP` -> `map`
