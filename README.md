@@ -195,8 +195,6 @@ fn vec2(x, y) {
 <a id="builtins"></a>
 ### 2. Standard Library of Functions
 
-#### General Purpose Functions
-
 `len(string | array | map)` -> `number`
 Returns the length of the string, array, or map.
 
@@ -223,6 +221,41 @@ Return a reversed version of a string or array.
 ```
 <br/>
 
+`replace(string find, string replace, string haystack)` -> `string`
+Replace all instances of find with replace in haystack
+
+```javascript
+var str = "Hello World"
+str = replace("World", "Sunshine", str) // Hello Sunshine
+```
+<br/>
+
+`contains(string haystack, string needle)` -> `bool`
+Test if needle occurs anywhere in haystack.
+
+```javascript
+var str = "Hello World"
+if(contains(str, "e")) {
+    // we reach here
+}
+if(!contains(str, "z")) {
+    // we do not reach here
+}
+```
+<br/>
+
+`explode(string haystack, string needle)` -> `array`
+Convert string haystack into an array using needle as delimiter.
+
+`implode(array, string delimiter)` -> `string`
+Convert an array into a string seperated by delimiter.
+
+```javascript
+var str = "Hello|a|Lovely|a|World"
+var arr = explode(str, "|a|") // arr = ["Hello", "Lovely", "World"]
+str = implode(arr, " ") // str = "Hello Lovely World"
+```
+<br/>
 
 `println(object, ...)` -> `null`
 ```javascript
@@ -238,12 +271,10 @@ Return a reversed version of a string or array.
 ```javascript
   var aMap = { "a": 1, "b": 2 }
 
-  println("a") // "a"
-  println(aMap) // { "a": 1, "b": 2 }
+  print("a") // "a"
+  print(aMap) // { "a": 1, "b": 2 }
 ```
 <br/>
-
-#### Array Functions
 
 `first(array)` -> `object`
 ```javascript
